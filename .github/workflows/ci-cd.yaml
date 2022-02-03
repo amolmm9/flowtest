@@ -23,8 +23,12 @@ jobs:
     - name: Build App
       run: dotnet build -c Release ./myfirstapi/myfirstapi.csproj
     
+    - name: Publish App
+      run: dotnet publish -c Release ./out
+        
     - name: Deploy App
       uses: azure/webapps-deploy@v2
       with: 
         app-name: GitTestWebApp
         publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_SECRET }}
+        package: ./out

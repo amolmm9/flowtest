@@ -17,7 +17,7 @@ jobs:
         dotnet-version: '5.0.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     
     - name: Restore dependencies   
-      run: dotnet restore ../myfirstapi/myfirstapi.csproj
+      run: dotnet restore ./myfirstapi/myfirstapi.csproj
 
     - name: Build App
       run: dotnet build -c Release --no--restore ../myfirstapi/myfirstapi.csproj

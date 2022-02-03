@@ -13,4 +13,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '5.0.x' # SDK Version to use; x will use the latest version of the 3.1 channel
-       #- run: dotnet build .
+    
+    - name: Restore dependencies   
+      run: dotnet restore
+
+    - name: Build App
+      run: dotnet build -c Release --no--restore 

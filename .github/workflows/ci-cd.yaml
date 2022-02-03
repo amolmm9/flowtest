@@ -29,11 +29,11 @@ jobs:
       run: dotnet build -c Release ./myfirstapi/myfirstapi.csproj
     
     - name: Publish App
-      run: dotnet publish -c Release ./myfirstapi/myfirstapi.csproj -o ./myfirstapi/out
+      run: dotnet publish -c Release ./myfirstapi/myfirstapi.csproj -o ./out
         
     - name: Deploy App
       uses: azure/webapps-deploy@v2
       with: 
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_SECRET }}
-        package: ./myfirstapi/out
+        package: ./out

@@ -1,7 +1,9 @@
 name: Continous Integration and Deployment
+
 on:
  push:
-   - main
+  branches:
+    - main
 jobs:
  build:
    runs-on: ubuntu-latest

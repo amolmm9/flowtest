@@ -20,4 +20,4 @@ jobs:
       run: dotnet restore ./myfirstapi/myfirstapi.csproj
 
     - name: Build App
-      run: dotnet build -c Release --no--restore ../myfirstapi/myfirstapi.csproj
+      run: dotnet build -c Release

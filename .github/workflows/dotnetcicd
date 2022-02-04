@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repo
+      # Amol Checkout the repo
       - uses: actions/checkout@v2
       
       # Setup .NET Core SDK

@@ -13,7 +13,7 @@ namespace myfirstapi
     {
         public static void Main(string[] args)
         {
-            # Test 123
+            
             CreateHostBuilder(args).Build().Run();
         }
 

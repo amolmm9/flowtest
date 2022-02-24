@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'GitTestWebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_83D9543FDEB34B2284924EDAC46B8AD6 }}
+          publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_SECRET }}
           package: .
